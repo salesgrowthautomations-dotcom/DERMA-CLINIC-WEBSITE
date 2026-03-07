@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dr. Ekta’s ENHANCE Clinic</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#fdf8f6;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;
+top:0;
+}
+
+header h1{
+color:#b76e79;
+font-size:22px;
+}
+
+nav a{
+margin-left:20px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+.hero{
+padding:90px 20px;
+text-align:center;
+background:#fff;
+}
+
+.hero img{
+width:200px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.hero h2{
+font-size:38px;
+margin-bottom:15px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+font-size:18px;
+}
+
+.button{
+display:inline-block;
+margin-top:25px;
+padding:14px 28px;
+background:#b76e79;
+color:white;
+border-radius:8px;
+text-decoration:none;
+}
+
+.section{
+padding:70px 20px;
+max-width:1100px;
+margin:auto;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+.treatments{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:10px;
+margin-bottom:20px;
+box-shadow:0 2px 8px rgba(0,0,0,0.06);
+}
+
+.contact{
+text-align:center;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:60px;
+}
+
+input, textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:1px solid #ddd;
+}
+
+button{
+background:#b76e79;
+border:none;
+color:white;
+padding:12px 20px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.chatbot{
+position:fixed;
+bottom:20px;
+right:20px;
+width:300px;
+background:white;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+overflow:hidden;
+}
+
+.chat-header{
+background:#b76e79;
+color:white;
+padding:10px;
+}
+
+.chat-body{
+padding:10px;
+height:200px;
+overflow-y:auto;
+font-size:14px;
+}
+
+.chat-input{
+display:flex;
+border-top:1px solid #eee;
+}
+
+.chat-input input{
+border:none;
+padding:10px;
+flex:1;
+}
+
+.chat-input button{
+border-radius:0;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>ENHANCE Clinic</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#treatments">Treatments</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2">
+
+<h2>Advanced Skin, Hair & Laser Treatments in Surat</h2>
+
+<p>Premium dermatology treatments by Dr. Ekta Patel for healthy skin and long lasting results.</p>
+
+<a class="button" href="#contact">Book Appointment</a>
+
+</section>
+
+<section id="treatments" class="section">
+
+<h2>Our Treatments</h2>
+
+<div class="treatments">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f">
+<h3>Acne Treatment</h3>
+<p>Advanced solutions for acne and acne scars.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c">
+<h3>Pigmentation</h3>
+<p>Remove dark spots and uneven skin tone.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9">
+<h3>Laser Hair Removal</h3>
+<p>Permanent hair reduction using advanced laser technology.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5">
+<h3>Anti Aging</h3>
+<p>Botox, fillers and skin tightening treatments.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="section">
+
+<h2>About Dr. Ekta Patel</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto">
+
+Dr. Ekta Patel (MBBS Dermatologist) is the founder of  
+ENHANCE Skin, Hair, Laser & Cosmetic Clinic in Surat.
+
+She specializes in acne treatment, pigmentation correction, laser procedures and anti-aging dermatology.
+
+</p>
+
+</section>
+
+<section class="section">
+
+<h2>Patient Testimonials</h2>
+
+<div class="testimonial">
+"Best dermatologist in Surat. My acne improved in just a few sessions." – Riya
+</div>
+
+<div class="testimonial">
+"Laser hair removal results were amazing. Highly recommend Dr Ekta." – Neha
+</div>
+
+</section>
+
+<section id="contact" class="section contact">
+
+<h2>Book Appointment</h2>
+
+<form>
+
+<input placeholder="Name" required>
+<input placeholder="Phone" required>
+<input placeholder="Email">
+<textarea placeholder="Message"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<br>
+
+<p><b>Phone:</b> 6360513214</p>
+
+<p>
+218, Sumeru Business Corner  
+Near Park Inn by Radisson Hotel  
+Behind Rajhans Multiplex  
+Pal–Adajan, Surat
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Dr. Ekta’s ENHANCE Skin, Hair, Laser & Cosmetic Clinic</p>
+
+</footer>
+
+<div class="chatbot">
+
+<div class="chat-header">
+Skin Assistant
+</div>
+
+<div class="chat-body" id="chat">
+Hello 👋 Ask me about acne, pigmentation, laser or hair treatments.
+</div>
+
+<div class="chat-input">
+
+<input id="question" placeholder="Ask your skin question">
+
+<button onclick="ask()">Send</button>
+
+</div>
+
+</div>
+
+<script>
+
+function ask(){
+
+let input = document.getElementById("question")
+let chat = document.getElementById("chat")
+
+let q = input.value.toLowerCase()
+
+chat.innerHTML += "<br><b>You:</b> "+input.value
+
+let reply="Please contact clinic for detailed consultation."
+
+if(q.includes("acne")) reply="Acne treatments usually take 4-6 sessions depending on skin condition."
+
+if(q.includes("laser")) reply="Laser hair removal typically requires 6 sessions for best results."
+
+if(q.includes("pigmentation")) reply="Pigmentation treatments include chemical peels and advanced laser therapy."
+
+if(q.includes("hair")) reply="Hair loss treatments include PRP therapy and medical treatment."
+
+chat.innerHTML += "<br><b>Assistant:</b> "+reply+"<br>"
+
+input.value=""
+
+chat.scrollTop = chat.scrollHeight
+
+}
+
+</script>
+
+</body>
+</html>
